@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-
+import streamlit as st
 # LangChain
 from langchain_cohere import ChatCohere
 from langchain_core.prompts import ChatPromptTemplate
@@ -8,7 +8,10 @@ from langchain_core.prompts import ChatPromptTemplate
 load_dotenv()
 
 
-cohere_api_key = os.getenv("COHERE_API_KEY")
+
+# Load API key safely (works both local and Streamlit Cloud)
+cohere_api_key = os.getenv("COHERE_API_KEY") or st.secrets["COHERE_API_KEY"]
+
 
 # Initialize LangChain ChatCohere model
 class CohereClient:
