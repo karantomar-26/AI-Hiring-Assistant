@@ -1,0 +1,38 @@
+# ✅ Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ✅ Environment files
+.env
+.env.*
+
+# ✅ Jupyter & Streamlit cache
+.ipynb_checkpoints/
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# ✅ Virtual environment folders
+venv/
+env/
+.venv/
+assist_env/
+env/
+.assist_env/
+
+# ✅ OS-specific files
+.DS_Store
+Thumbs.db
+
+# ✅ VSCode & IDE configs (optional)
+.vscode/
+.idea/
+
+# ✅ Logs or debug files (optional)
+*.log
+
+# ✅ Data files (optional)
+*.csv
+*.json
+*.db
